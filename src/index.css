@@ -4,6 +4,9 @@
 
 /* Reseting the some elements */
 
+p {
+    margin: 0;
+}
 
 body {
     margin: 0;

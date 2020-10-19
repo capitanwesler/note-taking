@@ -3,7 +3,18 @@
 
 #note-container {
     display: flex;
-    width: 400px;
     margin: 100px auto;
+    padding: 30px;
+    justify-content: space-around; 
+}
+
+#note-text {
+    display: flex;
     flex-direction: column;
+}
+
+#notes {
+    overflow-y: scroll;
+    height: 150px;
+    width: 150px;
 }

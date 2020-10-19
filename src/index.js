@@ -14,20 +14,33 @@ class NoteTaking extends React.Component {
 
         let textArea = document.querySelector("#note-container textarea");
         
-        //console.log(textArea);
+        
 
         this.setState({
             notes: [...this.state.notes, textArea.value] 
         });
+    }
 
-        //console.log(this.state.notes);
+    showNotes = () => {
+        let notesContainer = document.getElementById("notes");
+
+        for (const note of this.state.notes) {
+            let noteLi = document.createElement("li");
+
+            noteLi.innerText = note;
+            notesContainer.appendChild(noteLi);
+        }
     }
     
     render() {
         return(
             <div id="main-container">
                 <Navbar />
-                <Note handleNote={this.handleNote} />
+                <Note 
+                    handleNote={this.handleNote}    
+                    notes={this.state.notes}
+                    showNotes={this.showNotes}
+                />
             </div>
         );
     }
