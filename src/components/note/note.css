@@ -5,7 +5,7 @@
     display: flex;
     margin: 100px auto;
     padding: 30px;
-    justify-content: space-around; 
+    justify-content: space-evenly; 
 }
 
 #note-text {
@@ -13,8 +13,61 @@
     flex-direction: column;
 }
 
+#note-text textarea {
+    border: none;
+    background-color: lightgray;
+    font-size: 20px;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#note-text p {
+    font-size: 30px
+}
+
+#note-text button {
+    margin-top: 20px;
+    align-self: center;
+    padding: 10px;
+    border: none;
+    background-color: lightgray;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#show-all-notes {
+    display: flex;
+    flex-direction: column;
+}
+
+#show-all-notes p {
+    font-size: 30px
+}
+
+#show-all-notes button {
+    margin-top: 20px;
+    align-self: center;
+    padding: 10px;
+    border: none;
+    background-color: lightgray;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
 #notes {
     overflow-y: scroll;
-    height: 150px;
-    width: 150px;
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+    box-shadow: 5px 5px black;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.note-li {
+    font-size: 20px;
+    margin-left: 40px;
 }
