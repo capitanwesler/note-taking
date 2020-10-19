@@ -1,0 +1,17 @@
+/* This is the main CSS file for the application */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+/* Reseting the some elements */
+
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+ul {
+    margin: 0;
+}
+
+
