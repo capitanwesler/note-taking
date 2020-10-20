@@ -22,9 +22,8 @@ class NoteTaking extends React.Component {
             alert("You can't add a empty note, please try again !");
         }
 
-        textArea.value = "";
+        textArea.value = "Enter some text for your note !";
 
-        //console.log(this.state.notes);
     }
 
     resetListNotes = () => {
